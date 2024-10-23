@@ -1,0 +1,142 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Workflow" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="In_Produto" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>673,970</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>Workflow_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Workflow" sap:VirtualizedContainerService.HintSize="512,905" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Use Browser Chrome: Magazine Luiza | Pra você é Magalu!" sap:VirtualizedContainerService.HintSize="450,817" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InUiElement="{x:Null}" InteractionMode="DebuggerApi" IsIncognito="{x:Null}" OpenMode="{x:Null}" OutUiElement="{x:Null}" ScopeGuid="b45fe94c-5746-4082-822a-589791acb4bb" Timeout="{x:Null}" UserDataFolderMode="{x:Null}" UserDataFolderPath="{x:Null}" Version="V2" WebDriverMode="{x:Null}">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,577" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:MaximizeWindow ContinueOnError="{x:Null}" DisplayName="Maximize Window" sap:VirtualizedContainerService.HintSize="354,57" sap2010:WorkflowViewState.IdRef="MaximizeWindow_1" Window="{x:Null}" />
+            <uix:NClick AlterIfDisabled="{x:Null}" ClickType="Single" ContinueOnError="{x:Null}" CursorMotionType="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DisplayName="Click 'INPUT input-search'" sap:VirtualizedContainerService.HintSize="354,189" sap2010:WorkflowViewState.IdRef="NClick_2" InScope="{x:Null}" InUiElement="{x:Null}" KeyModifiers="None" MouseButton="Left" OutUiElement="{x:Null}" ScopeIdentifier="b45fe94c-5746-4082-822a-589791acb4bb" Timeout="{x:Null}" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.magazineluiza.com.br/" DesignTimeRectangle="259, 217, 559, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-search'" FullSelectorArgument="&lt;webctrl id='input-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-search' tag='INPUT' type='search' class='sc-dPZUQH kxRYUz' aaname='Procure no magalu' /&gt;" Guid="3668c414-5295-481e-bf54-abed153a0cd4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAjMAAAAUCAYAAAB4ZLxlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7drRboMwDAXQ/f8f9Gs75cGSm5kEaKmGco6ERnIdd/AyS+vPEwDgxgwzAMCtGWYAgFszzAAAt2aYAQBu7WWYeTwe5bWC2XN+8z2s8s4B4BP+DDOVFf64tmccPf8338EK7xsAPuXwMFPV9HttHVdvb1blWeSj+pxVeTaqqbLYq7Kmz/qanFdZ6LOm2gOAVX18mOnzs1lT7YWWfbpf/hmq/arPKG/rs+dntQCwusPfmenXTd6r8jDKKkd7zX6PPf36mq39Xs6r2rPnz/QCgJV89d9M1dlePjuqr7K8N8t71dk9/fIVtmp7+WzOt+5DtQcAq7pkmMlmZ7M+39s3zD5rb7+4H/UbrfusOXt+Ty8AWNm/GWbe6Rtmn7W3X9xv9av6XJXPagFgdW8PM209y8PRrN/LqmzUrznSb7SusqvyWS0ArO7wF4CbPutr+jw7klU1Yet8Fr3iGqnOZtU6rlhn7+RHagFgdS/DDNcxgADANQwzF6gGF8MMAFzDMHORNrzkCwC4hmEGALg1wwwAcGPP5y/GAfuEocE4NwAAAABJRU5ErkJggg==" InformativeScreenshot="82ddbea15c7fab651e57cf9abc45d7c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Magazine Luiza | Pra você é Magalu!' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" AlterIfDisabled="{x:Null}" ClickBeforeMode="Single" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DeselectAfter="{x:Null}" DisplayName="Type Into 'INPUT input-search'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="354,243" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InScope="{x:Null}" InUiElement="{x:Null}" OutUiElement="{x:Null}" ScopeIdentifier="b45fe94c-5746-4082-822a-589791acb4bb" SecureText="{x:Null}" Timeout="{x:Null}" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.magazineluiza.com.br/" DesignTimeRectangle="259, 217, 559, 16" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT input-search'" FullSelectorArgument="&lt;webctrl id='input-search' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='input-search' tag='INPUT' type='search' class='sc-dPZUQH kxRYUz' aaname='Procure no magalu' /&gt;" Guid="b9be36a9-bead-4d43-b5d4-ce3afccea4fe" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAjMAAAAUCAYAAAB4ZLxlAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGXSURBVHhe7drRboMwDAXQ/f8f9Gs75cGSm5kEaKmGco6ERnIdd/AyS+vPEwDgxgwzAMCtGWYAgFszzAAAt2aYAQBu7WWYeTwe5bWC2XN+8z2s8s4B4BP+DDOVFf64tmccPf8338EK7xsAPuXwMFPV9HttHVdvb1blWeSj+pxVeTaqqbLYq7Kmz/qanFdZ6LOm2gOAVX18mOnzs1lT7YWWfbpf/hmq/arPKG/rs+dntQCwusPfmenXTd6r8jDKKkd7zX6PPf36mq39Xs6r2rPnz/QCgJV89d9M1dlePjuqr7K8N8t71dk9/fIVtmp7+WzOt+5DtQcAq7pkmMlmZ7M+39s3zD5rb7+4H/UbrfusOXt+Ty8AWNm/GWbe6Rtmn7W3X9xv9av6XJXPagFgdW8PM209y8PRrN/LqmzUrznSb7SusqvyWS0ArO7wF4CbPutr+jw7klU1Yet8Fr3iGqnOZtU6rlhn7+RHagFgdS/DDNcxgADANQwzF6gGF8MMAFzDMHORNrzkCwC4hmEGALg1wwwAcGPP5y/GAfuEocE4NwAAAABJRU5ErkJggg==" InformativeScreenshot="82ddbea15c7fab651e57cf9abc45d7c2.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Magazine Luiza | Pra você é Magalu!' /&gt;" SearchSteps="FuzzySelector, Image" Version="V1" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB+UExURUSk2JnN6sO5MCJ91AKEySnBvTrFN10z1ZlA2LFyS7lZWpd2XEpD0zLZod40noFOyOvFD0ehwr8v3CWw2ACDySO4wTahxi5p05ZFylWs3CjIqeJPQd3u+C6728mSKHe94/uWADC6USlr0rRDpSt814jF5jOc1e73+////wCDygd6+5wAAABkSURBVChTY1DTRAFqDFAGHOAVUNNQxy6griGvqsqgqiqJEIAAGYQAA6MGI4OGOkJATVVDFcjDKYAKiBFgkuPmUubn4FFiFhaVUtRkYBFQ4JTmkxBiF1eRZeVlE2EQhCqFAE0xAJBjJLcaWLKHAAAAAElFTkSuQmCC" InformativeScreenshot="37ddcdcf0761bd7823ecabdba60fa899.jpg" Selector="&lt;html app='chrome.exe' title='Magazine Luiza | Pra você é Magalu!' /&gt;" Url="https://www.magazineluiza.com.br/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

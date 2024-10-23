@@ -1,0 +1,5 @@
+Usando Wildcards nos seletores:
+
+Asterisco (*) - substitui zerou ou mais caracteres Ex: RPA - Developer (RPA - *)
+
+Ponto de interrogação (?) - substitui um único caractere RPA - Developer (??? - Developer)
